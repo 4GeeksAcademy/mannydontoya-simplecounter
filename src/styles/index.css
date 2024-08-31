@@ -1,4 +1,13 @@
-
+.container-fluid{
+    text-align: center;
+}
+.container-fluid div{
+    display: inline-block;
+    font-size: 60px;
+    line-height: 60px;
+    color: white;
+    padding: 10px;
+}
 /* 
 
     You can write your own styles here...

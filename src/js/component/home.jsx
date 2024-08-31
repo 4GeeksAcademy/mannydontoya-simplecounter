@@ -4,21 +4,19 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
+const Home = ({seconds}) => {
+	const numToString = seconds.toString()
+	// 9 
+	// 10 
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="container-fluid bg-black">
+			<div className="icon text-light"><i class="far fa-clock"></i></div>
+			<div className="seconds6">{seconds < 10 ? seconds:numToString[1]}</div>
+			<div className="seconds5">{seconds < 10 ? seconds:numToString[1]}</div>
+			<div className="seonds4">{seconds < 10 ? seconds:numToString[1]}</div>
+			<div className="seconds3">{seconds < 10 ? seconds:numToString[1]}</div>
+			<div className="seconds2">{seconds < 10 ? 0:numToString[0]}</div>
+			<div className="seconds1">{seconds < 10 ? seconds:numToString[1]}</div>
 		</div>
 	);
 };

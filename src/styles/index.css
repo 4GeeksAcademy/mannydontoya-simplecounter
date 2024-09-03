@@ -7,6 +7,10 @@
     line-height: 60px;
     color: white;
     padding: 10px;
+    border: .5px solid rgb(28, 28, 28);
+    border-radius: 10%;
+    margin-left: 9px;
+    background-color: rgba(53, 53, 53, 0.349);
 }
 /* 
 
